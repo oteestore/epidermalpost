@@ -225,7 +225,7 @@ const Dashboard = () => {
 
           <Tabs defaultValue="morning" className="w-full">
             <div className="bg-white rounded-lg overflow-hidden mb-8">
-              <TabsList className="grid w-full grid-cols-2 h-[52px]">
+              <TabsList className="grid w-full grid-cols-2 h-[54px]">
                 <TabsTrigger
                   value="morning"
                   className="text-lg py-3 data-[state=active]:bg-pink-50 rounded-none h-full"
