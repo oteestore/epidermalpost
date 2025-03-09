@@ -225,16 +225,16 @@ const Dashboard = () => {
 
           <Tabs defaultValue="morning" className="w-full">
             <div className="bg-white rounded-lg overflow-hidden mb-8">
-              <TabsList className="grid w-full grid-cols-2">
+              <TabsList className="grid w-full grid-cols-2 h-[52px]">
                 <TabsTrigger
                   value="morning"
-                  className="text-lg py-3 data-[state=active]:bg-pink-50 rounded-none"
+                  className="text-lg py-3 data-[state=active]:bg-pink-50 rounded-none h-full"
                 >
                   Morning Routine
                 </TabsTrigger>
                 <TabsTrigger
                   value="evening"
-                  className="text-lg py-3 data-[state=active]:bg-blue-50 rounded-none"
+                  className="text-lg py-3 data-[state=active]:bg-blue-50 rounded-none h-full"
                 >
                   Evening Routine
                 </TabsTrigger>
