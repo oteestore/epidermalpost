@@ -121,14 +121,22 @@ const ResultsPage = () => {
           ) : (
             <div>
               <Tabs defaultValue="morning" className="w-full">
-                <TabsList className="grid w-full grid-cols-2 mb-8">
-                  <TabsTrigger value="morning" className="text-lg py-3">
-                    Morning Routine
-                  </TabsTrigger>
-                  <TabsTrigger value="evening" className="text-lg py-3">
-                    Evening Routine
-                  </TabsTrigger>
-                </TabsList>
+                <div className="bg-white rounded-lg overflow-hidden mb-8">
+                  <TabsList className="grid w-full grid-cols-2">
+                    <TabsTrigger
+                      value="morning"
+                      className="text-lg py-3 data-[state=active]:bg-pink-50 rounded-none"
+                    >
+                      Morning Routine
+                    </TabsTrigger>
+                    <TabsTrigger
+                      value="evening"
+                      className="text-lg py-3 data-[state=active]:bg-blue-50 rounded-none"
+                    >
+                      Evening Routine
+                    </TabsTrigger>
+                  </TabsList>
+                </div>
 
                 <TabsContent value="morning" className="space-y-8">
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
